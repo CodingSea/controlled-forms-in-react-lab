@@ -46,7 +46,15 @@ function Bookshelf()
             </div>
             <div className="bookCardsDiv">
                 {
-                    /* Book cards will display here */
+                    books.map((book, index) =>
+                    {
+                        return (
+                            <div key={ index } className='bookCard'>
+                                <h3>{ book.title }</h3>
+                                <p>by { book.author }</p>
+                            </div>
+                        )
+                    })
                 }
             </div>
         </div>
