@@ -28,7 +28,6 @@ function Bookshelf()
         setNewBook({ title: "", author: "" });
         
         setBooks(copyBooks);
-        console.log(books);
     }
 
     return (
